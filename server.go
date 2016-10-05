@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"local/rest-api-skeleton/handlers"
-	"local/rest-api-skeleton/resources"
 	"log"
 	"net/http"
+
+	"github.com/wjb-iv/rest-api-skeleton/handlers"
+	"github.com/wjb-iv/rest-api-skeleton/resources"
 
 	"github.com/julienschmidt/httprouter"
 	"github.com/urfave/negroni"
