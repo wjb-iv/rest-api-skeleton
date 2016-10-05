@@ -38,6 +38,7 @@ func list() httprouter.Handle {
 
 func get() httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+		dumpUser(r)
 		idVar := params.ByName("id")
 		res := temp{r.RequestURI, idVar, "Not Implemented Yet"}
 		w.Header().Add("Content-Type", "application/json; charset=utf-8")
@@ -48,6 +49,7 @@ func get() httprouter.Handle {
 
 func create() httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
+		dumpUser(r)
 		res := temp{r.RequestURI, "", "Not Implemented Yet"}
 		w.Header().Add("Content-Type", "application/json; charset=utf-8")
 		w.Header().Add("Location", "resource/null")
@@ -58,6 +60,7 @@ func create() httprouter.Handle {
 
 func update() httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+		dumpUser(r)
 		//idVar := params.ByName("id")
 		w.WriteHeader(http.StatusNoContent)
 	}
@@ -65,6 +68,7 @@ func update() httprouter.Handle {
 
 func remove() httprouter.Handle {
 	return func(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+		dumpUser(r)
 		//idVar := params.ByName("id")
 		w.WriteHeader(http.StatusNoContent)
 	}
