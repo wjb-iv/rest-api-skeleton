@@ -9,6 +9,7 @@ import (
 )
 
 // JwtValidator - Negroni-compatible validator
+//              - TODO Expose configuration of inner auth0 middleware
 type JwtValidator struct {
 	handler      *jwtauth0.JWTMiddleware
 	ignoredPaths []string

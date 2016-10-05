@@ -1,0 +1,15 @@
+[submodule "vendor/github.com/auth0/go-jwt-middleware"]
+	path = vendor/github.com/auth0/go-jwt-middleware
+	url = https://github.com/auth0/go-jwt-middleware
+[submodule "vendor/github.com/dgrijalva/jwt-go"]
+	path = vendor/github.com/dgrijalva/jwt-go
+	url = https://github.com/dgrijalva/jwt-go
+[submodule "vendor/github.com/gorilla/context"]
+	path = vendor/github.com/gorilla/context
+	url = https://github.com/gorilla/context
+[submodule "vendor/github.com/julienschmidt/httprouter"]
+	path = vendor/github.com/julienschmidt/httprouter
+	url = https://github.com/julienschmidt/httprouter
+[submodule "vendor/github.com/urfave/negroni"]
+	path = vendor/github.com/urfave/negroni
+	url = https://github.com/urfave/negroni
