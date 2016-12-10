@@ -1,4 +1,4 @@
-# REST API Skeleton
+# REST API Template App
 Another learning project in Go.
 
 Inspired by some great ideas that have come up at my day job, this sample demonstrates the use of the excellent [HTTPRouter Project](https://github.com/julienschmidt/httprouter) to produce a simple, yet sophisticated and feature-rich API server.

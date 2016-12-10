@@ -7,7 +7,7 @@ import (
 	"syscall"
 
 	"github.com/spf13/cobra"
-	"github.com/wjb-iv/rest-api-skeleton/rest"
+	"github.com/wjb-iv/rest-api-template/rest"
 )
 
 // serveCmd represents the serve command which starts the HTTP server
@@ -19,6 +19,7 @@ var serveCmd = &cobra.Command{
 	},
 }
 
+// serve function sets up the API server and begins serving requests
 func serve() {
 	restServer := rest.New()
 	go func() {
@@ -35,6 +36,7 @@ func serve() {
 	go func() {
 		for _ = range signalChan {
 			log.Println("Received an interrupt, stopping services...")
+			// TODO: Any cleanup can be performed here...
 			cleanupDone <- true
 		}
 	}()
