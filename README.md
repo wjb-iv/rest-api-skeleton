@@ -5,6 +5,11 @@ Inspired by some great ideas that have come up at my day job, this sample demons
 
 Also uses the [Cobra CLI Library](https://github.com/spf13/cobra) to demonstrate command-line server startup with various configuration flags.
 
+## Running
+After building, (with `go build`) run the example using:
+
+`./rest-api-template serve`
+
 ## What's Inside
 
 ### Apache Style Request logging
